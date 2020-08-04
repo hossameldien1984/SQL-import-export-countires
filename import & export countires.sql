@@ -1,4 +1,4 @@
-use sales;
+
 select coalesce(exporters.country,importers.country) country, ex exports,im imports 
 from 
 (select companies.country , sum(coalesce(trades.value,0)) ex   
